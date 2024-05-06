@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение по поиску людей по фото</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card {
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+        .card-header {
+            font-size: 24px;
+            color: #555555;
+            border-bottom: 2px solid #cccccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .custom-btn {
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+        .card-img {
+            float: right;
+            max-width: 15%;
+            margin-left: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px; /* Добавляем отступ снизу */
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Поиск по фото</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ip.html">Узнать информацию по IP</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="card">
+    <div class="card-header text-center">Приложение по поиску людей по фото</div>
+    <div class="card-content">
+        <img src="image/nonameman.jpeg" alt="Фото" class="card-img">
+        <p>Выберите изображение и нажмите кнопку "Загрузить" для начала.</p>
+        <p>Всего лиц в базе: 1,113,850,873 (просчитано 100% от всех)</p>
+        <p>Время сбора: с 11-2019 по 11-2020, с 12-2022 по 01-2023.</p>
+        <p>Процент успешных поисков: 68.79%.</p>
+        <p>Источник: VK фото профиля</p>
+    </div>
+    <div class="text-center">
+        <button type="button" id="btnUpload" class="btn btn-primary custom-btn">Загрузить</button>
+        <button type="button" id="btnFind" class="btn btn-secondary custom-btn" disabled>Найти</button>
+    </div>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
